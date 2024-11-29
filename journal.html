@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Journal | Edison</title>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+
+        <link rel="stylesheet" href="css/journal.min.css" />
+    </head>
+    <body>
+        <div class="promobar d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-between">
+                <ul class="promobar_socials d-flex align-items-center">
+                    <li class="promobar_socials-item">
+                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="promobar_socials-item">
+                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="promobar_socials-item">
+                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="promobar_main d-flex align-items-center">
+                    <p class="promobar_main-text">Try for free! <span class="hide">30 day Trial and Free Lectures</span></p>
+                    <a class="btn btn--yellow" href="#" id="signUpTrigger">
+                        <span>Sign Up</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <header class="header" data-page="journal">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <div class="logo header_logo">
+                    <a class="d-inline-flex align-items-center" href="index.html">
+                        <span class="logo_picture">
+                            <img src="svg/logo.svg" alt="Edison" />
+                        </span>
+                        <span class="text">
+                            <span class="brand">edison</span>
+                            <span class="text_secondary">courses</span>
+                        </span>
+                    </a>
+                </div>
+                <button
+                    class="header_trigger"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                >
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="index.html" data-page="home">Home</a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="courses.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#coursesMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="coursesMenu"
+                                data-page="courses"
+                            >
+                                All Courses
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="coursesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a class="dropdown-item nav-item" data-page="courses" href="courses.html" data-main="true">
+                                            All Courses
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="course" href="course.html">Course Description</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="about.html" data-page="about">About Us</a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="pricing.html" data-page="pricing">Prices</a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="journal.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#journalMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="journalMenu"
+                                data-page="journal"
+                            >
+                                Journal
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="journalMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a class="dropdown-item nav-item" data-page="journal" href="journal.html" data-main="true">
+                                            Journal
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="post" href="post.html">Single Post</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#pagesMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="pagesMenu"
+                                data-page=""
+                            >
+                                Pages
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="pagesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="library" href="library.html">Media library</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="events" href="events.html">Events</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="teachers" href="team.html">Teachers</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="faq" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="error" href="404.html">404</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="contacts.html" data-page="contacts">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="promobar_socials d-flex align-items-center justify-content-center">
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header class="page">
+            <div class="page_breadcrumbs">
+                <div class="container">
+                    <ul class="page_breadcrumbs-list d-flex flex-wrap align-items-center">
+                        <li class="list-item">
+                            <a href="index.html" class="link">Home</a>
+                        </li>
+
+                        <li class="list-item">Journal</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page_main">
+                <div class="underlay"></div>
+                <div class="container">
+                    <div class="content-wrapper">
+                        <h1 class="page_main-header">Journal</h1>
+                        <p class="page_main-text">
+                            Donec accumsan, dolor ac malesuada rhoncus, leo arcu pellentesque dolor, nec tristique diam neque vitae sem.
+                            Nulla a lectus sollicitudin, volutpat lacus id, eleifend ipsum.
+                        </p>
+
+                        <form class="page_main-form" action="#" method="post" data-type="search">
+                            <i class="icon-search-solid icon"></i>
+                            <input class="field required" type="search" placeholder="Search for…" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- journal content start -->
+        <main class="journal">
+            <div class="container d-flex flex-column flex-lg-row justify-content-between">
+                <div class="panel d-flex align-items-center justify-content-between">
+                    <div class="panel_block">
+                        <a class="link inline-flex align-items-center" href="#" data-bs-toggle="collapse" data-bs-target="#sidebar">
+                            <i class="icon-ellipsis-v-solid icon"></i>
+                            All
+                        </a>
+                    </div>
+                    <div class="panel_block">
+                        <select name="sidebarLang" id="sidebarLangPanel">
+                            <option value="en">English</option>
+                            <option value="de">Deutsch</option>
+                            <option value="it">Italiano</option>
+                            <option value="pl">Polski</option>
+                        </select>
+                    </div>
+                </div>
+                <aside class="sidebar collapse" id="sidebar">
+                    <div class="sidebar_block sidebar_block--nav">
+                        <h4 class="sidebar_block-header">All Categories:</h4>
+                        <ul class="list">
+                            <li class="list-item">
+                                <a class="link" href="#">
+                                    <span class="icon_wrapper">
+                                        <i class="icon-arrow-circle-left-solid icon"></i>
+                                    </span>
+                                    <span class="title">Business and Marketing</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="#">
+                                    <span class="icon_wrapper">
+                                        <i class="icon-arrow-circle-left-solid icon"></i>
+                                    </span>
+                                    <span class="title">Languages learning</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="#">
+                                    <span class="icon_wrapper">
+                                        <i class="icon-arrow-circle-left-solid icon"></i>
+                                    </span>
+                                    <span class="title">Art and Design</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="#">
+                                    <span class="icon_wrapper">
+                                        <i class="icon-arrow-circle-left-solid icon"></i>
+                                    </span>
+                                    <span class="title">Programming</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="#">
+                                    <span class="icon_wrapper">
+                                        <i class="icon-arrow-circle-left-solid icon"></i>
+                                    </span>
+                                    <span class="title">Personal Growth</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="#">
+                                    <span class="icon_wrapper">
+                                        <i class="icon-arrow-circle-left-solid icon"></i>
+                                    </span>
+                                    <span class="title">Health and Beauty</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="#">
+                                    <span class="icon_wrapper">
+                                        <i class="icon-arrow-circle-left-solid icon"></i>
+                                    </span>
+                                    <span class="title">Psychology and Relationships</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="#">
+                                    <span class="icon_wrapper">
+                                        <i class="icon-arrow-circle-left-solid icon"></i>
+                                    </span>
+                                    <span class="title">Cryptocurrency, Blockchain, Forex</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar_block sidebar_block--types">
+                        <h4 class="sidebar_block-header">Types of lessons:</h4>
+                        <ul class="list">
+                            <li class="list-item">
+                                <input type="checkbox" id="onlineVideo" />
+                                <label for="onlineVideo">
+                                    <i class="icon-check icon"></i>
+                                    On-line video lessons
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <input type="checkbox" id="digests" />
+                                <label for="digests">
+                                    <i class="icon-check icon"></i>
+                                    Text digests
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <input type="checkbox" id="webinars" />
+                                <label for="webinars">
+                                    <i class="icon-check icon"></i>
+                                    Lections and Webinars
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <input type="checkbox" id="realTime" />
+                                <label for="realTime">
+                                    <i class="icon-check icon"></i>
+                                    Real-time teaching
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sidebar_block sidebar_block--lang">
+                        <h4 class="sidebar_block-header">Select Language</h4>
+                        <select name="sidebarLang" id="sidebarLang">
+                            <option value="en">English</option>
+                            <option value="de">Deutsch</option>
+                            <option value="it">Italiano</option>
+                            <option value="pl">Polski</option>
+                        </select>
+                    </div>
+
+                    <div class="sidebar_block sidebar_block--recent">
+                        <ul class="list">
+                            <li class="list-item">
+                                <div class="media">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </div>
+                                <div class="main">
+                                    <a class="main_title h5" href="post.html">
+                                        Authors of New Yorker illustrations about working with color and composition
+                                    </a>
+                                    <ul class="main_meta d-flex align-items-center">
+                                        <li class="main_meta-item d-flex align-items-center">
+                                            <i class="icon-clock-solid icon"></i> February 07, 2021
+                                        </li>
+                                        <li class="main_meta-item d-flex align-items-center">
+                                            <i class="icon-user-solid icon"></i> Miranda Dawson
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="media">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </div>
+                                <div class="main">
+                                    <a class="main_title h5" href="post.html">
+                                        Self-taught web developer proves that anything is possible
+                                    </a>
+                                    <ul class="main_meta d-flex align-items-center">
+                                        <li class="main_meta-item d-flex align-items-center">
+                                            <i class="icon-clock-solid icon"></i> February 07, 2021
+                                        </li>
+                                        <li class="main_meta-item d-flex align-items-center">
+                                            <i class="icon-user-solid icon"></i> Miranda Dawson
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+                <div class="content">
+                    <ul class="journal_list">
+                        <li class="journal_list-item" data-order="1">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                            </div>
+                            <div class="main">
+                                <ul class="main_meta d-flex flex-wrap">
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-clock-solid icon"></i> February 07, 2021
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-user-solid icon"></i> Miranda Dawson
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-link-solid icon"></i> Programming
+                                    </li>
+                                </ul>
+                                <a class="main_title h3" href="post.html" target="_blank" rel="noopener noreferrer">
+                                    AR Smart Glasses Used for Business Success in 2020
+                                </a>
+                                <p class="main_text">
+                                    In this sequence of four courses, you will summarize and demonstrate all stages of the UI/UX development
+                                    process, from user research to defining a project’s strategy, scope, and information architecture, to
+                                    developing sitemaps and wireframes
+                                </p>
+                                <a class="main_btn btn" href="post.html">
+                                    <span class="text">Read more</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="journal_list-item" data-order="2">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                            </div>
+                            <div class="main">
+                                <ul class="main_meta d-flex flex-wrap">
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-clock-solid icon"></i> February 07, 2021
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-user-solid icon"></i> Miranda Dawson
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-link-solid icon"></i> Programming
+                                    </li>
+                                </ul>
+                                <a class="main_title h3" href="post.html" target="_blank" rel="noopener noreferrer">
+                                    Crypto Market Anomalies - December 2020 Edition
+                                </a>
+                                <p class="main_text">
+                                    In this sequence of four courses, you will summarize and demonstrate all stages of the UI/UX development
+                                    process, from user research to defining a project’s strategy, scope, and information architecture, to
+                                    developing sitemaps and wireframes
+                                </p>
+                                <a class="main_btn btn" href="post.html">
+                                    <span class="text">Read more</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="journal_list-item" data-order="3">
+                            <div class="media">
+                                <picture>
+                                    <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                    <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                </picture>
+                            </div>
+                            <div class="main">
+                                <ul class="main_meta d-flex flex-wrap">
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-clock-solid icon"></i> February 07, 2021
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-user-solid icon"></i> Miranda Dawson
+                                    </li>
+                                    <li class="main_meta-item d-flex align-items-center">
+                                        <i class="icon-link-solid icon"></i> Programming
+                                    </li>
+                                </ul>
+                                <a class="main_title h3" href="post.html" target="_blank" rel="noopener noreferrer">
+                                    Adopting a Mature Engineering Organization in Startups
+                                </a>
+                                <p class="main_text">
+                                    In this sequence of four courses, you will summarize and demonstrate all stages of the UI/UX development
+                                    process, from user research to defining a project’s strategy, scope, and information architecture, to
+                                    developing sitemaps and wireframes
+                                </p>
+                                <a class="main_btn btn" href="post.html">
+                                    <span class="text">Read more</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination d-flex align-items-center justify-content-sm-end">
+                        <ul class="pagination_pages d-flex">
+                            <li class="pagination_pages-page">
+                                <a class="page active" href="#">
+                                    <span class="page-number">1</span>
+                                </a>
+                            </li>
+                            <li class="pagination_pages-page">
+                                <a class="page" href="#">
+                                    <span class="page-number">2</span>
+                                </a>
+                            </li>
+                            <li class="pagination_pages-page">
+                                <a class="page" href="#">
+                                    <span class="page-number">3</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a class="pagination_next" href="#">
+                            <i class="icon-angle-right icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner orange">
+                <div class="underlay"></div>
+                <div class="container d-lg-flex align-items-center">
+                    <div class="banner_content">
+                        <h4 class="banner_content-title" data-aos="fade-up">
+                            Unlimited access to educational materials and lectures for subscribers
+                        </h4>
+                        <div class="wrapper" data-aos="fade-up" data-aos-delay="50">
+                            <a class="banner_content-btn btn btn--yellow" href="pricing.html">See pricing plans</a>
+                        </div>
+                    </div>
+                    <div class="banner_media">
+                        <picture>
+                            <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                            <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- journal content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_wrapper d-sm-flex flex-wrap flex-lg-nowrap justify-content-lg-between">
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="1">
+                        <div class="logo logo--footer">
+                            <a class="d-inline-flex align-items-center" href="index.html">
+                                <span class="logo_picture">
+                                    <img src="svg/logo.svg" alt="Edison" />
+                                </span>
+                                <span class="text">
+                                    <span class="brand">edison</span>
+                                    <span class="text_secondary">courses</span>
+                                </span>
+                            </a>
+                        </div>
+                        <p class="footer_block-text">
+                            Curabitur non libero at lorem finibus lobortis. Ut auctor egestas pretium. Proin nunc ligula, venenatis tempor
+                        </p>
+                        <ul class="footer_block-socials d-flex align-items-center">
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="wrapper d-flex flex-column">
+                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="mailto:example@domain.com">
+                                <i class="icon-envelope icon"></i>
+                                acadesiq@mail.com
+                            </a>
+                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="tel:+123456789">
+                                <i class="icon-phone-solid icon"></i>
+                                +1-202-555-0190
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="2">
+                        <h5 class="footer_block-header">Information:</h5>
+                        <ul class="footer_block-nav">
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="about.html">About This Project</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="contacts.html">Contact Us</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="courses.html">All Courses</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="journal.html">From the Blog</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="library.html">Media Library</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto m-sm-0" data-order="3">
+                        <h5 class="footer_block-header">Popular Courses:</h5>
+                        <ul class="footer_block-list">
+                            <li class="footer_block-list_item d-flex align-items-baseline">
+                                <span class="marker"></span>
+                                <a class="link" href="course.html">Data Science Fundamentals CS with Python and SQL</a>
+                            </li>
+                            <li class="footer_block-list_item d-flex align-items-baseline">
+                                <span class="marker"></span>
+                                <a class="link" href="course.html">AWS Certified Developer - Associate 2020</a>
+                            </li>
+                            <li class="footer_block-list_item d-flex align-items-baseline">
+                                <span class="marker"></span>
+                                <a class="link" href="course.html">How to Draw From Beginner to Master</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="4">
+                        <h5 class="footer_block-header">Instagram:</h5>
+                        <ul class="footer_block-instagram d-grid">
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_secondary">
+                <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
+                    <a class="footer_secondary-scroll" id="scrollToTop" href="#">
+                        <i class="icon-angle-up icon"></i>
+                    </a>
+                    <p class="footer_secondary-copyright">Copyright @ <span id="currentYear"></span> Edison by Merkulove</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="js/common.min.js"></script>
+    </body>
+</html>

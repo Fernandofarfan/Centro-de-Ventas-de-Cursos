@@ -1,0 +1,106 @@
+/**
+ * Edison
+ * Edison is an Online Education Website Template Kit
+ * Exclusively on https://1.envato.market/edison-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.2
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lamber Lilith (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+// features section
+
+.features {
+    padding: 0 0 80px;
+
+    &_list {
+        &-item {
+            margin-bottom: 30px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+//
+
+@media screen and (min-width: 575.98px) {
+    .features {
+
+        &_list {
+
+            &-item {
+                .card {
+                    padding: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767.98px) {
+    .features {
+        padding: 20px 0 100px;
+
+        &_list {
+            margin: 0 -15px;
+
+            &-item {
+                padding: 0 15px;
+
+                .card {
+                    padding: 40px 30px 25px;
+                }
+
+                &[data-order="5"] {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 991.98px) {
+    .features {
+        padding: 40px 0 120px;
+
+        &_list {
+            margin: 0 -17.5px;
+
+            &-item {
+                padding: 0 17.5px;
+                margin-bottom: 45px;
+
+                .card {
+                    padding: 50px;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        padding: 100px 0 120px !important;
+    }
+}
+
+@media screen and (min-width: 1199.98px) {
+    .features {
+
+        &_list {
+
+            &-item {
+                &[data-order="4"] {
+                    margin-bottom: 0;
+                }
+
+                .card {
+                    padding: 40px 0 25px;
+                }
+            }
+        }
+    }
+}

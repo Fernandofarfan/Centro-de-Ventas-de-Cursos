@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Contact Us | Edison</title>
+        <script id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflS50iB-/www-widgetapi.js" async=""></script>
+        <script src="https://www.youtube.com/player_api"></script>
+        <link rel="stylesheet preload" as="style" href="css/preload.min.css" />
+        <link rel="stylesheet preload" as="style" href="css/icomoon.css" />
+        <link rel="stylesheet preload" as="style" href="css/libs.min.css" />
+
+        <link rel="stylesheet" href="css/contacts.min.css" />
+    </head>
+    <body>
+        <div class="promobar d-flex align-items-center">
+            <div class="container d-flex align-items-center justify-content-between">
+                <ul class="promobar_socials d-flex align-items-center">
+                    <li class="promobar_socials-item">
+                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="promobar_socials-item">
+                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="promobar_socials-item">
+                        <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="promobar_main d-flex align-items-center">
+                    <p class="promobar_main-text">Try for free! <span class="hide">30 day Trial and Free Lectures</span></p>
+                    <a class="btn btn--yellow" href="#" id="signUpTrigger">
+                        <span>Sign Up</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <header class="header" data-page="contacts">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <div class="logo header_logo">
+                    <a class="d-inline-flex align-items-center" href="index.html">
+                        <span class="logo_picture">
+                            <img src="svg/logo.svg" alt="Edison" />
+                        </span>
+                        <span class="text">
+                            <span class="brand">edison</span>
+                            <span class="text_secondary">courses</span>
+                        </span>
+                    </a>
+                </div>
+                <button
+                    class="header_trigger"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#headerMenu"
+                    aria-controls="headerMenu"
+                >
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <nav class="header_nav collapse" id="headerMenu">
+                    <ul class="header_nav-list">
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="index.html" data-page="home">Home</a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="courses.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#coursesMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="coursesMenu"
+                                data-page="courses"
+                            >
+                                All Courses
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="coursesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a class="dropdown-item nav-item" data-page="courses" href="courses.html" data-main="true">
+                                            All Courses
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="course" href="course.html">Course Description</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="about.html" data-page="about">About Us</a>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="pricing.html" data-page="pricing">Prices</a>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="journal.html"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#journalMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="journalMenu"
+                                data-page="journal"
+                            >
+                                Journal
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="journalMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item" data-main="true">
+                                        <a class="dropdown-item nav-item" data-page="journal" href="journal.html" data-main="true">
+                                            Journal
+                                        </a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="post" href="post.html">Single Post</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item dropdown">
+                            <a
+                                class="nav-link nav-item dropdown-toggle d-inline-flex align-items-center"
+                                href="#"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#pagesMenu"
+                                data-trigger="dropdown"
+                                aria-expanded="false"
+                                aria-controls="pagesMenu"
+                                data-page=""
+                            >
+                                Pages
+                                <i class="icon-angle-down icon"></i>
+                            </a>
+                            <div class="dropdown-menu collapse" id="pagesMenu">
+                                <ul class="dropdown-list">
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="library" href="library.html">Media library</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="events" href="events.html">Events</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="teachers" href="team.html">Teachers</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="faq" href="faq.html">FAQ</a>
+                                    </li>
+                                    <li class="list-item">
+                                        <a class="dropdown-item nav-item" data-page="error" href="404.html">404</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_nav-list_item">
+                            <a class="nav-item" href="contacts.html" data-page="contacts">Contact Us</a>
+                        </li>
+                    </ul>
+                    <ul class="promobar_socials d-flex align-items-center justify-content-center">
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="promobar_socials-item">
+                            <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header class="page">
+            <div class="page_breadcrumbs">
+                <div class="container">
+                    <ul class="page_breadcrumbs-list d-flex flex-wrap align-items-center">
+                        <li class="list-item">
+                            <a href="index.html" class="link">Home</a>
+                        </li>
+
+                        <li class="list-item">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page_main">
+                <div class="underlay"></div>
+                <div class="container">
+                    <div class="content-wrapper">
+                        <h1 class="page_main-header">Contact Us</h1>
+                        <p class="page_main-text">
+                            Donec accumsan, dolor ac malesuada rhoncus, leo arcu pellentesque dolor, nec tristique diam neque vitae sem.
+                            Nulla a lectus sollicitudin, volutpat lacus id, eleifend ipsum.
+                        </p>
+                    </div>
+
+                    <ul class="page_main-list d-sm-flex flex-wrap justify-content-center">
+                        <li class="page_main-list_item" data-aos="fade-up">
+                            <div class="wrapper">
+                                <div class="content d-flex justify-content-sm-center">
+                                    <i class="icon-map-marker-alt-solid icon"></i>
+                                    <div class="block">
+                                        <span class="content_text text">61 Wood Ave. Holly Springs, NC 27540</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="page_main-list_item" data-aos="fade-up" data-aos-delay="50">
+                            <div class="wrapper">
+                                <div class="content d-flex justify-content-sm-center">
+                                    <i class="icon-phone-solid icon"></i>
+                                    <div class="block d-flex flex-column">
+                                        <a class="content_link text" href="tel:+1234567890">+1-202-555-0150</a>
+                                        <a class="content_link text" href="tel:+1234567890">+1-202-555-0151</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="page_main-list_item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="wrapper">
+                                <div class="content d-flex justify-content-sm-center">
+                                    <i class="icon-envelope icon"></i>
+                                    <div class="block d-flex flex-column">
+                                        <a class="content_link text" href="mailto:example@domain.com">acadesiq@mail.de</a>
+                                        <a class="content_link text" href="mailto:example@domain.com">hacades@sendmeil.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- contacts content start -->
+        <main class="contacts">
+            <section class="contacts_form">
+                <div class="container">
+                    <div class="contacts_form-header">
+                        <h2 class="contacts_form-header_title">Our experts will help you</h2>
+
+                        <p class="contacts_form-header_text text">
+                            If you have questions about the format or do not know what to choose, leave your request: we will be happy to
+                            answer all your questions.
+                        </p>
+                    </div>
+                    <form class="contacts_form-form" action="form.php" method="post" data-type="contacts">
+                        <div class="contacts_form-form_wrapper d-sm-flex justify-content-between">
+                            <input class="field required" type="text" data-type="email" placeholder="Email" id="contactsEmail" />
+                            <input class="field required" type="text" placeholder="Name" id="contactsName" />
+                        </div>
+                        <div class="contacts_form-form_wrapper d-sm-flex justify-content-between">
+                            <input class="field required" type="text" data-type="tel" placeholder="Phone number" id="contactsTel" />
+                            <input class="field required" type="text" placeholder="Subject" id="contactsSubject" />
+                        </div>
+                        <textarea
+                            class="field required"
+                            placeholder="Your message here"
+                            data-type="message"
+                            id="contactsMessage"
+                        ></textarea>
+                        <div class="contacts_form-form_footer">
+                            <div class="wrapper d-flex flex-wrap align-items-center justify-content-center">
+                                <div class="checkbox">
+                                    <input type="checkbox" name="dataProcessing" id="dataProcessing" checked />
+                                    <label for="dataProcessing">
+                                        <i class="icon-check icon"></i>
+                                        I agree to the terms of data processing.
+                                    </label>
+                                </div>
+                                <a class="link" href="#">Terms and Conditions</a>
+                            </div>
+                            <button class="btn btn--gradient" type="submit">
+                                <span class="text">Send a Message</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <div class="contacts_map">
+                <div id="map"></div>
+            </div>
+        </main>
+        <!-- contacts content end -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_wrapper d-sm-flex flex-wrap flex-lg-nowrap justify-content-lg-between">
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="1">
+                        <div class="logo logo--footer">
+                            <a class="d-inline-flex align-items-center" href="index.html">
+                                <span class="logo_picture">
+                                    <img src="svg/logo.svg" alt="Edison" />
+                                </span>
+                                <span class="text">
+                                    <span class="brand">edison</span>
+                                    <span class="text_secondary">courses</span>
+                                </span>
+                            </a>
+                        </div>
+                        <p class="footer_block-text">
+                            Curabitur non libero at lorem finibus lobortis. Ut auctor egestas pretium. Proin nunc ligula, venenatis tempor
+                        </p>
+                        <ul class="footer_block-socials d-flex align-items-center">
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer_block-socials_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="wrapper d-flex flex-column">
+                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="mailto:example@domain.com">
+                                <i class="icon-envelope icon"></i>
+                                acadesiq@mail.com
+                            </a>
+                            <a class="link link--contacts text text--sm d-inline-flex align-items-center" href="tel:+123456789">
+                                <i class="icon-phone-solid icon"></i>
+                                +1-202-555-0190
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="2">
+                        <h5 class="footer_block-header">Information:</h5>
+                        <ul class="footer_block-nav">
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="about.html">About This Project</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="contacts.html">Contact Us</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="courses.html">All Courses</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="journal.html">From the Blog</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="library.html">Media Library</a>
+                            </li>
+                            <li class="footer_block-nav_item">
+                                <a class="link" href="faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto m-sm-0" data-order="3">
+                        <h5 class="footer_block-header">Popular Courses:</h5>
+                        <ul class="footer_block-list">
+                            <li class="footer_block-list_item d-flex align-items-baseline">
+                                <span class="marker"></span>
+                                <a class="link" href="course.html">Data Science Fundamentals CS with Python and SQL</a>
+                            </li>
+                            <li class="footer_block-list_item d-flex align-items-baseline">
+                                <span class="marker"></span>
+                                <a class="link" href="course.html">AWS Certified Developer - Associate 2020</a>
+                            </li>
+                            <li class="footer_block-list_item d-flex align-items-baseline">
+                                <span class="marker"></span>
+                                <a class="link" href="course.html">How to Draw From Beginner to Master</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_block col-sm-6 col-lg-auto" data-order="4">
+                        <h5 class="footer_block-header">Instagram:</h5>
+                        <ul class="footer_block-instagram d-grid">
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                            <li class="footer_block-instagram_item">
+                                <a class="link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                    <picture>
+                                        <source data-srcset="img/placeholder.jpg" srcset="img/placeholder.jpg" />
+                                        <img class="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                    </picture>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_secondary">
+                <div class="container d-flex flex-column flex-sm-row align-items-center justify-content-sm-between">
+                    <a class="footer_secondary-scroll" id="scrollToTop" href="#">
+                        <i class="icon-angle-up icon"></i>
+                    </a>
+                    <p class="footer_secondary-copyright">Copyright @ <span id="currentYear"></span> Edison by Merkulove</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="js/common.min.js"></script>
+        <script src="js/map.min.js"></script>
+    </body>
+</html>
